@@ -89,7 +89,7 @@ class MyHomePage extends StatelessWidget {
                     child: Row(
                       children: [
                         Expanded(
-                            flex: 2,
+                            flex: 1,
                             child: InkWell(
                               onTap: () {
                                 controller.leftUser.value++;
@@ -118,10 +118,10 @@ class MyHomePage extends StatelessWidget {
                               ),
                             )),
                         const SizedBox(
-                          width: 16,
+                          width: 10,
                         ),
                         Expanded(
-                            flex: 5,
+                            flex: 2,
                             child: Container(
                               color: Colors.black,
                               alignment: Alignment.center,
@@ -160,10 +160,10 @@ class MyHomePage extends StatelessWidget {
                               ),
                             )),
                         const SizedBox(
-                          width: 16,
+                          width: 10,
                         ),
                         Expanded(
-                            flex: 2,
+                            flex: 1,
                             child: InkWell(
                               onTap: () {
                                 controller.rightUser.value++;
@@ -270,7 +270,7 @@ class BottomCustomPaint extends CustomPainter {
     Paint paint0 = Paint()
       ..color = Colors.red
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 10;
+      ..strokeWidth = 8;
 
     Path path0 = Path();
     path0.moveTo(0, 0);
@@ -305,7 +305,7 @@ class AppBarCustomPaint extends CustomPainter {
     Paint paint1 = Paint()
       ..color = Colors.red
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 10;
+      ..strokeWidth = 8;
 
     Path path1 = Path();
     // Line is starting from -width as in horizontal view its getting
